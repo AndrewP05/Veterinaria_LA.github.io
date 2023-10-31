@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Baloo 2', sans-serif;
+}
+
+body{
+    background-color: #FFFF;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+main{
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.Contenedor_full{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+.Recuadro_atras{
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    background-color: rgba(191, 237, 190, 0.5);
+}
+
+.Recuadro_atras div{
+    margin: 100px 40px;
+    color: black;
+    transition: all 380ms;
+}
+
+.Recuadro_atras div p,
+.Recuadro_atras div button{
+    margin-top: 30px;
+}
+
+.Recuadro_atras div h3{
+    font-weight: 400;
+    font-size: 26px;    
+}
+
+.Recuadro_atras button{
+    padding: 10px 40px;
+    border: 2px solid #FFFF;
+    border-radius: 10px;
+    background-color: transparent;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #FFFF;
+    outline: none;
+    transition: all 300ms;
+}
+
+.Recuadro_atras button:hover{
+    background: #FFFF;
+    color: #BFEDBE;
+}
+
+.Contenedor_logIn-Register{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 380px;
+    position: relative;
+    top: -185px;
+    left: 10px;
+    transition: left 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+}
+
+.Contenedor_logIn-Register form{
+    width: 100%;
+    padding: 80px 20px;
+    background: #BFEDBE;
+    position: absolute;
+    border-radius: 20px;
+}
+
+.Contenedor_logIn-Register form h2{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #252525;
+}
+
+.Contenedor_logIn-Register form input{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background: #E6FCD9;
+    font-size: 16px;
+    outline: none;
+}
+
+.Contenedor_logIn-Register form button{
+    padding: 10px 40px ;
+    margin-top: 40px;
+    border: 3px solid #619885;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    background: #97C4AD;
+    color: #252525;
+    cursor: pointer;
+    outline: none;
+}
+
+.Contenedor_logIn-Register form button:hover{
+    background: #619885;
+}
+
+.formulario_logIn{
+    opacity: 1;
+    display: block;
+}
+
+.formulario_register{
+    display: none;
+}
+
+@media screen and (max-width:850px){
+    main{
+        margin-top: 50px;
+    }
+    .Recuadro_atras{
+        max-width: 350px;
+        height: 300px;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .Recuadro_atras div{
+        margin: 0px;
+        position: absolute;
+    }
+
+    .Contenedor_logIn-Register{
+        top: -10px;
+        left: -5px;
+        margin: auto;
+    }
+
+    .Contenedor_logIn-Register form{
+        position: relative;
+    }
+}
